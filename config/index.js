@@ -9,7 +9,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target: 'http://192.168.0.151:80/jeecmsv9',
+        target: 'http://localhost:8082',
         changeOrigin: true,
         pathRewrite: {
           '^/api': '/api'
@@ -17,7 +17,7 @@ module.exports = {
       }
     },
     // Various Dev Server settings
-    host: '0.0.0.0', // can be overwritten by process.env.HOST
+    host: 'localhost', // can be overwritten by process.env.HOST
     port: 8889, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: true,
     errorOverlay: true,
